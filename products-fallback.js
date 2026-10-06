@@ -1,0 +1,215 @@
+// Backup copy of data/products.json (auto-generated when the server starts).
+window.FALLBACK_PRODUCTS = [
+  {
+    "id": "iphone-15-pro-max",
+    "sku": "IFX-APL-001",
+    "brand": "Apple",
+    "name": "iPhone 15 Pro Max",
+    "storage": "256GB",
+    "price": 1850000,
+    "stock": 5,
+    "color": "#8d8f93",
+    "image": "apple-iphone-15-pro-max-1.jpg",
+    "specs": [
+      "6.7\" Super Retina XDR",
+      "A17 Pro chip",
+      "48MP main camera"
+    ]
+  },
+  {
+    "id": "iphone-14",
+    "sku": "IFX-APL-002",
+    "brand": "Apple",
+    "name": "iPhone 14",
+    "storage": "128GB",
+    "price": 920000,
+    "stock": 10,
+    "color": "#2b3a55",
+    "image": "apple-iphone-14-3.jpg",
+    "specs": [
+      "6.1\" Super Retina XDR",
+      "A15 Bionic chip",
+      "12MP dual camera"
+    ]
+  },
+  {
+    "id": "galaxy-s24-ultra",
+    "sku": "IFX-SAM-001",
+    "brand": "Samsung",
+    "name": "Galaxy S24 Ultra",
+    "storage": "256GB",
+    "price": 1650000,
+    "stock": 5,
+    "color": "#4a4a45",
+    "image": "samsung-galaxy-s24-ultra-5g-sm-s928-0.jpg",
+    "specs": [
+      "6.8\" Dynamic AMOLED 2X",
+      "Snapdragon 8 Gen 3",
+      "200MP main camera"
+    ]
+  },
+  {
+    "id": "galaxy-a55",
+    "sku": "IFX-SAM-002",
+    "brand": "Samsung",
+    "name": "Galaxy A55 5G",
+    "storage": "128GB",
+    "price": 480000,
+    "stock": 14,
+    "color": "#6f87b8",
+    "image": "samsung-galaxy-a55-1.jpg",
+    "specs": [
+      "6.6\" Super AMOLED",
+      "5000mAh battery",
+      "50MP OIS camera"
+    ]
+  },
+  {
+    "id": "pixel-8",
+    "sku": "IFX-GOO-001",
+    "brand": "Google",
+    "name": "Pixel 8",
+    "storage": "128GB",
+    "price": 780000,
+    "stock": 4,
+    "color": "#3b4a43",
+    "image": "google-pixel-8-1.jpg",
+    "specs": [
+      "6.2\" Actua OLED",
+      "Google Tensor G3",
+      "7 years of updates"
+    ]
+  },
+  {
+    "id": "tecno-camon-30",
+    "sku": "IFX-TEC-001",
+    "brand": "Tecno",
+    "name": "Camon 30 Pro",
+    "storage": "256GB",
+    "price": 330000,
+    "stock": 18,
+    "color": "#6a5acd",
+    "image": "tecno-camon-30-pro-2.jpg",
+    "specs": [
+      "6.78\" AMOLED 144Hz",
+      "50MP RGBW camera",
+      "70W fast charging"
+    ]
+  },
+  {
+    "id": "infinix-zero-40",
+    "sku": "IFX-INF-001",
+    "brand": "Infinix",
+    "name": "Zero 40",
+    "storage": "256GB",
+    "price": 395000,
+    "stock": 12,
+    "color": "#1f6f5c",
+    "image": "infinix-zero40-5g-3.jpg",
+    "specs": [
+      "6.78\" AMOLED 144Hz",
+      "50MP front and rear",
+      "45W fast charging"
+    ]
+  },
+  {
+    "id": "redmi-turbo-4pro",
+    "sku": "IFX-XIA-001",
+    "brand": "Xiaomi",
+    "name": "Redmi Turbo 4 Pro",
+    "storage": "256GB",
+    "price": 360000,
+    "stock": 14,
+    "color": "#1b702e",
+    "image": "xiaomi-redmi-turbo-4-pro-1.jpg",
+    "specs": [
+      "6.69\" AMOLED 120Hz",
+      "Snapdragon 8 elite Gen 3",
+      "200MP main camera",
+      "70W turbo charging"
+    ]
+  },
+  {
+    "id": "redmi-note-13-pro",
+    "sku": "IFX-XIA-001",
+    "brand": "Xiaomi",
+    "name": "Redmi Note 13 Pro",
+    "storage": "256GB",
+    "price": 369000,
+    "stock": 9,
+    "color": "#2f3e5c",
+    "image": "xiaomi-redmi-note-13-pro-5g-3.jpg",
+    "specs": [
+      "6.67\" AMOLED 120Hz",
+      "80MP main camera",
+      "67W turbo charging"
+    ]
+  },
+  {
+    "id": "redmagic-11spro",
+    "sku": "IFX-ZUBIA-001",
+    "brand": "Zubia",
+    "name": "Redmagic 11s Pro",
+    "storage": "512GB",
+    "price": 1450000,
+    "stock": 3,
+    "color": "#4b0552",
+    "image": "zte-nubia-red-magic-11s-pro-4.jpg",
+    "specs": [
+      "6.68\" AMOLED 144Hz",
+      "Snapdragon 8 elite Gen 5",
+      "200MP main camera",
+      "85W turbo charging"
+    ]
+  },
+  {
+    "id": "one plus-16",
+    "sku": "IFX-opp-001",
+    "brand": "Oppo",
+    "name": "One Plus 16",
+    "storage": "512GB",
+    "price": 985000,
+    "stock": 6,
+    "color": "#2c3e50",
+    "image": "oneplus-16-1.jpg",
+    "specs": [
+      "6.79\" AMOLED 144Hz",
+      "120MP main camera",
+      "70W turbo charging"
+    ]
+  },
+  {
+    "id": "redmagic-8spro",
+    "sku": "IFX-ZUBIA-001",
+    "brand": "Zubia",
+    "name": "Redmagic 8s Pro",
+    "storage": "512GB",
+    "price": 587000,
+    "stock": 13,
+    "color": "#4f6906",
+    "image": "zte-nubia-red-magic-8s-pro-1.jpg",
+    "specs": [
+      "6.68\" AMOLED 120Hz",
+      "150MP main camera",
+      "85W turbo charging"
+    ]
+  },
+  {
+    "id": "Infinix-note-60-pro",
+    "sku": "IFX-INF-001",
+    "brand": "Infinix",
+    "name": "Infinix note 60Pro",
+    "storage": "256GB",
+    "price": 687000,
+    "stock": 18,
+    "color": "#6a5acd",
+    "image": "infinix-note60-pro-12.jpg",
+    "specs": [
+      "6.78\" AMOLED 144Hz",
+      "Snapdragon 7 Gen 3",
+      "100MP 4k resolution camera",
+      "85W fast charging",
+      "65000mah Battery"
+    ]
+  }
+];

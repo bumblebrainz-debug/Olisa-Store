@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Olisa store | New smartphones</title>
+<meta name="description" content="Buy genuine smartphones from Olisa store. Clear prices, fast delivery.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap bar">
+    <a class="brand" href="/" aria-label="Olisa store home">
+      <span class="logo" aria-hidden="true">O</span>
+      <h1>Olisa store</h1>
+    </a>
+    <nav class="nav"><a href="#track">Track order</a></nav>
+    <button class="cart-btn" id="openCart" aria-label="Open cart">
+      Cart <span class="count" id="cartCount">0</span>
+    </button>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <p class="lead">Genuine smartphones at honest prices.</p>
+    <p class="sub">Browse, add to cart, and place your order online. We confirm every order by phone before delivery.</p>
+  </div>
+</section>
+
+<main class="wrap">
+  <div class="tools">
+    <div class="chips" id="brands" role="group" aria-label="Filter by brand"></div>
+    <input id="search" type="search" placeholder="Search name or product code" aria-label="Search phones by name or product code">
+  </div>
+  <div id="banner" class="banner" role="alert" hidden></div>
+  <p id="status" class="status" aria-live="polite">Loading phones...</p>
+  <div class="grid" id="grid"></div>
+</main>
+
+<section class="track" id="track">
+  <div class="wrap">
+    <h2>Track your order</h2>
+    <p class="sub">Enter your order code (ORD-...) or package code (PKG-...) and the last 4 digits of your phone number.</p>
+    <form id="trackForm" class="track-form" novalidate>
+      <input name="code" placeholder="ORD-2610-0001 or PKG-XXXXXXXX" aria-label="Order or package code" required>
+      <input name="phone" placeholder="Last 4 digits of phone" inputmode="numeric" maxlength="4" aria-label="Last 4 digits of your phone number" required>
+      <button class="primary" type="submit">Track</button>
+    </form>
+    <p class="err" id="trackErr" role="alert"></p>
+    <div id="trackResult" hidden></div>
+  </div>
+</section>
+
+<section class="trust">
+  <div class="wrap trust-row">
+    <div><strong>Genuine phones</strong><span>Brand new and sealed</span></div>
+    <div><strong>Pay on delivery</strong><span>Confirm the phone before you pay</span></div>
+    <div><strong>Warranty</strong><span>Every phone is covered</span></div>
+    <div><strong>Delivery</strong><span>Nationwide, tracked</span></div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot">
+    <div>
+      <strong>Olisa store</strong>
+      <p>Call or WhatsApp: +2349125044490 <br>Open Monday to Saturday, 9am to 6pm</p>
+    </div>
+    <p class="fine">&copy; <span id="year"></span> Olisa store. Prices are in Nigerian Naira and may change.</p>
+  </div>
+</footer>
+
+<!-- Cart drawer -->
+<div class="overlay" id="overlay" hidden></div>
+<aside class="drawer" id="drawer" aria-label="Shopping cart" aria-hidden="true">
+  <div class="drawer-head">
+    <h2>Your cart</h2>
+    <button class="plain" id="closeCart" aria-label="Close cart">&times;</button>
+  </div>
+  <div class="drawer-body" id="cartItems"></div>
+  <div class="drawer-foot">
+    <div class="total"><span>Total</span><strong id="cartTotal">&#8358;0</strong></div>
+    <button class="primary" id="checkoutBtn">Checkout</button>
+  </div>
+</aside>
+
+<!-- Checkout dialog -->
+<dialog id="checkout">
+  <form id="orderForm" validate>
+    <h2>Delivery details</h2>
+    <label>Full name<input name="name" autocomplete="name" required></label>
+    <label>Phone number<input name="phone" type="tel" autocomplete="tel" placeholder="0803 000 0000" required></label>
+    <label>Delivery address<textarea name="address" rows="3" autocomplete="street-address" required></textarea></label>
+    <label>Note (optional)<input name="note" maxlength="300"></label>
+    <p class="err" id="formErr" role="alert"></p>
+    <div class="actions">
+      <button type="button" class="ghost" id="cancelCheckout">Back</button>
+      <button type="submit" class="primary" id="placeBtn">Place order</button>
+    </div>
+  </form>
+  <div id="done" hidden>
+    <h2>Order received</h2>
+    <p>Thank you. Please keep these codes:</p>
+    <div class="codes">
+      <div><span>Order code</span><strong id="orderId"></strong></div>
+      <div><span>Package code</span><strong id="pkgId"></strong></div>
+    </div>
+    <p>We will call you shortly to confirm delivery. Total to pay on delivery: <strong id="orderTotal"></strong>.</p>
+    <button class="primary" id="closeDone">Continue shopping</button>
+  </div>
+</dialog>
+
+<script src="products-fallback.js"></script>
+<img src="" alt="Description of my photo">
+<script src="app.js"></script>
+</body>
+</html>
