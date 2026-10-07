@@ -3,7 +3,7 @@ const naira = n => '\u20A6' + Number(n).toLocaleString('en-NG');
 const esc = s => String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 
 // If the page was opened from Live Server (port 5500) or as a file, talk to the Node server on port 3000.
-const API = location.port === '3000' ? '' : 'http://localhost:3000';
+const API = (location.protocol === 'file:' || location.port === '5500') ? 'http://localhost:3000' : '';
 let serverUp = true;
 let products = [];
 let brand = 'All';
